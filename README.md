@@ -6,7 +6,7 @@ OutFocus 3.0, codenamed OutFocus RED, is a WordPress theme in development for th
 
 OutFocus RED, like WordPress, is open source. It's published under the GNU General Public License v3.0 (https://www.gnu.org/licenses/gpl-3.0.html), which means it is free to reproduce and distribute as long as you include the original license (found along with this package).
 
-OutFocus RED is being developed by CodeFeathers - http://www.thefeathers.in/codenamed
+OutFocus RED is being developed by CodeFeathers - http://www.thefeathers.in/code
 
 OutFocus and CodeFeathers are subsidiaries of the Feathers - http://www.theFeathers.in
 
