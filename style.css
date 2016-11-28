@@ -1262,6 +1262,13 @@ a:active {
 	position: relative;
 }
 
+@media screen and (max-width:768px) {
+	#masthead {
+		position: static;
+		height: 7em;
+	}
+}
+
 .home #masthead {
 	height: 6.5em;
 	background-color: #fff;
@@ -1424,15 +1431,17 @@ h2.entry-title a {
 
 @media screen and (min-width:1124px) {
 	.entry-content .single-content {
-	-webkit-column-count: 3; /* Chrome, Safari, Opera */
-    -moz-column-count: 3; /* Firefox */
-    column-count: 3;
+	/* Remove the comments or figure out another way after figuring out post formats in v2.9.3
+	/*-webkit-column-count: 3; /* Chrome, Safari, Opera */
+    /*-moz-column-count: 3; /* Firefox */
+    /*column-count: 3;
     -webkit-column-gap: 2em; /* Chrome, Safari, Opera */
     -moz-column-gap: 2em; /* Firefox */
     column-gap: 2em;
 	color: #000;
 	margin: auto;
-	max-width: 70%;
+	/*max-width: 70%; */
+	max-width: 40%;
 }
 }
 
@@ -1618,25 +1627,17 @@ object {
 /*--------------------------------------------------------------
 ## Images
 --------------------------------------------------------------*/
-
-figure {
-	max-height: 768px;
+figure.featured-image {
+	max-height: 600px;
 	overflow: hidden;
-	margin: 0;
-}
-
-@media screen and (max-width:1366px) {
-	figure {
-		max-height: 600px;
-		overflow: hidden;
-		margin: 0;
-	}
-}
+	margin: 0; }
 
 .featured-image img {
+	vertical-align: m;
 	width: 100%;
 	margin: auto;
 	padding-bottom: 0;
+	vertical-align: middle;
 }
 
 /*--------------------------------------------------------------
