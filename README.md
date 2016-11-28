@@ -28,6 +28,10 @@ Hence, v2.8.x is an update to the v2.x.x line, while v2.9.x is a precursor to th
 
 ##Changelog
 
+###2.9.2.20161128
+* Temporarily commented out 3 column layout for posts
+* Reduced max featured image height to 600px in all devices
+
 ###2.9.2.20161013
 * Removed masonry layout for index page
 * Added support for infinite scroll
