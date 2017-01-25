@@ -5,11 +5,7 @@ GitHub Theme URI: https://github.com/CodeFeathers/OutFocusRED
 Author: Muthu Kumar
 Author URI: http://www.thefeathers.in/code
 Description: OutFocus RED is the third major renovation project for OutFocus since it started in 2014. The theme, although designed for <a href="http://www.outfocus.in">the OutFocus Magazine</a>, is available for free at <a href="https://github.com/CodeFeathers/OutFocusRED">GitHub</a>. Feel free to contribute. :)
-<<<<<<< HEAD
 Version: 2.9.3.20170125
-=======
-Version: 2.9.2.20161213
->>>>>>> origin/master
 License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: outfocusred
@@ -1450,28 +1446,11 @@ h2.entry-title a {
 	color: #e52920;
 }
 
-<<<<<<< HEAD
 .entry-content .single-content
 {
 	color: #000;
 	margin: auto;
 	max-width: 95%;
-=======
-@media screen and (min-width:1124px) {
-	.entry-content .single-content {
-	/* Remove the comments or figure out another way after figuring out post formats in v2.9.3
-	/*-webkit-column-count: 3; /* Chrome, Safari, Opera */
-    /*-moz-column-count: 3; /* Firefox */
-    /*column-count: 3;
-    -webkit-column-gap: 2em; /* Chrome, Safari, Opera */
-    -moz-column-gap: 2em; /* Firefox */
-    column-gap: 2em;
-	color: #000;
-	margin: auto;
-	/*max-width: 70%; */
-	max-width: 40%;
-}
->>>>>>> origin/master
 }
 
 @media screen and (min-width:768px) {
@@ -1705,7 +1684,6 @@ object {
 ## Images
 --------------------------------------------------------------*/
 figure.featured-image {
-<<<<<<< HEAD
 	max-height: 700px;
 	overflow: hidden;
 	margin: 0;
@@ -1714,18 +1692,6 @@ figure.featured-image {
 
 .featured-image img {
 	vertical-align: middle;
-=======
-	max-height: 600px;
-	overflow: hidden;
-	margin: 0; }
-
-.featured-image img {
-<<<<<<< HEAD
-	vertical-align: middle;
-=======
-	vertical-align: m;
->>>>>>> origin/master
->>>>>>> origin/master
 	width: 100%;
 	margin: auto;
 	padding-bottom: 0;
