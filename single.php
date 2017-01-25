@@ -15,7 +15,6 @@ get_header(); ?>
 		while ( have_posts() ) : the_post();
 			get_template_part( 'template-parts/content-single', get_post_format() );
 
-
 			the_post_navigation( array (
 				'next_text' => '<span class="meta-nav" aria-hidden="true">' . __('Next', 'outfocusred') . '</span>' . '<span class="screen-reader-text">' . __('Next post:', 'outfocusred') . '</span>' . '<span class="post-title">%title</span>',
 				'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __('Previous', 'outfocusred') . '</span>' . '<span class="screen-reader-text">' . __('Previous post:', 'outfocusred') . '</span>' . '<span class="post-title">%title</span>',

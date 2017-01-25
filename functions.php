@@ -161,3 +161,28 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+function _remove_script_version( $src ){ 
+$parts = explode( '?', $src ); 	
+return $parts[0]; 
+} 
+add_filter( 'script_loader_src', '_remove_script_version', 15, 1 ); 
+add_filter( 'style_loader_src', '_remove_script_version', 15, 1 );
+
+/**
+ * Social Buttons in Single Posts
+ */
+function socialshare() {
+if (is_single()) { ?>
+<div id="socialshare">
+<div class="shareicon"><a target="_blank" href="whatsapp://send?text=<?php the_title() ?>%0A%0A<?php the_excerpt() ?>%0A<?php the_permalink() ?>" data-action="share/whatsapp/share"><img class="socialicon" src="<?php echo get_template_directory_uri(); ?>/img/social/washare.png"></img></a>
+</div>
+<div class="shareicon">
+	<div id="fb" class="fb-share-button" data-href="<?php echo get_permalink(); ?>" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink(); ?>&amp;src=sdkpreparse"><img class="socialicon" src="<?php echo get_template_directory_uri(); ?>/img/social/fbshare.png"></img></a></div>
+</div>
+<div class="shareicon"><a href="http://twitter.com/share" data-url="<?php the_permalink() ?>" data-via="wpsquare" data-text="<?php the_title(); ?>" data-related="_mandava" data-count="vertical" data-hashtags="WordPress" target="_blank"><img class="socialicon" src="<?php echo get_template_directory_uri(); ?>/img/social/tweet.png"></img></a>
+</div>
+<div class="shareicon"><a href="https://t.me/share/url?url=<?php the_permalink() ?>&text=<?php the_title(); ?>" data-text="<?php the_title(); ?>" data-url="<?php the_permalink() ?>" target="_blank"><img class="socialicon" src="<?php echo get_template_directory_uri(); ?>/img/social/telegramshare.png"></img></a>
+</div>
+</div>
+<?php }}

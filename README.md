@@ -28,6 +28,16 @@ Hence, v2.8.x is an update to the v2.x.x line, while v2.9.x is a precursor to th
 
 ##Changelog
 
+###2.9.3.20170125
+* Added social share buttons to posts
+* Based on feedback, removed the red border around the screen
+* Thin red border to highlight featured image
+* Title and meta float over featured image rather than under
+* Changed heading fonts to Poppins (Sans Serif)
+* Slightly increased font sizes to improve readability (base: 18px)
+* Adjusted content widths for more breakpoints to provide a more streamlined reading experience
+* Homepage has restricted content width to differ from individual articles page and to scroll faster
+
 ###2.9.2.20161013
 * Removed masonry layout for index page
 * Added support for infinite scroll

@@ -5,7 +5,7 @@ GitHub Theme URI: https://github.com/CodeFeathers/OutFocusRED
 Author: Muthu Kumar
 Author URI: http://www.thefeathers.in/code
 Description: OutFocus RED is the third major renovation project for OutFocus since it started in 2014. The theme, although designed for <a href="http://www.outfocus.in">the OutFocus Magazine</a>, is available for free at <a href="https://github.com/CodeFeathers/OutFocusRED">GitHub</a>. Feel free to contribute. :)
-Version: 2.9.2.20161025
+Version: 2.9.3.20170125
 License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: outfocusred
@@ -25,7 +25,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Normalize
-# Body Border
+# Body Styling
 # Typography
 # Elements
 # Forms
@@ -39,6 +39,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Content
 	## Masthead
 	## Posts and pages
+	## Social Share
 	## Comments
 # Infinite scroll
 # Media
@@ -264,45 +265,23 @@ th {
 }
 
 /*--------------------------------------------------------------
-# Body Border
+# Body Styling
 --------------------------------------------------------------*/
 
-
-
-/* Create a series of empty pseudo-elements... */
-html:before,html:after,body:before,body:after{
-    content:"";
-    background:#e52920;
-    position:fixed;
-    display:block;
-    z-index:5;
+.blog {
+	margin: auto;
+	width: 90%;
 }
 
-/* ...and position them! */
-html:before{
-    height:1em;
-    left:0;
-    right:0;
-    top:0;
-}
-html:after{
-    width:1em;
-    top:0;
-    right:0;
-    bottom:0;
-}
-body:before{
-    height:1em;
-    right:0;
-    bottom:0;
-    left:0;
-}
-body:after{
-    width:1em;
-    top:0;
-    bottom:0;
-    left:0;
-}
+@media screen and (min-width:768px) {
+.blog {
+	width: 80%;
+}}
+
+@media screen and (min-width:1024px) {
+.blog {
+	width: 65%;
+}}
 
 @media screen and (max-width:768px) {
 html:before{
@@ -345,8 +324,7 @@ select,
 textarea {
 	color: #404040;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
-	font-size: 1rem;
+	font-size: 18px;
 	line-height: 1.5;
 }
 
@@ -362,7 +340,7 @@ h4,
 h5,
 h6 {
 	clear: both;
-	font-family: 'Merriweather', serif;
+	font-family: 'Poppins', serif;
 }
 
 p {
@@ -1096,7 +1074,7 @@ a:active {
 .nav-previous a, .nav-next a, .nav-previous a:visited, .nav-next a:visited {
 	display: block;
 	text-decoration: none;
-	font-family: 'Merriweather', serif;
+	font-family: 'Poppins', serif;
 	color: #000;
 	width: 100%;
 	border: solid #000 2px;
@@ -1262,6 +1240,13 @@ a:active {
 	position: relative;
 }
 
+@media screen and (max-width:768px) {
+	#masthead {
+		position: static;
+		height: 7em;
+	}
+}
+
 .home #masthead {
 	height: 6.5em;
 	background-color: #fff;
@@ -1341,36 +1326,66 @@ a:active {
     margin: 1em 2em;
 }
 
-.entry-title {
-	padding: 2em 1em;
+.entry-combo {
 	position: relative;
-	top: -8px;
+	top: -3em;
+	background: #e52920;
+	color: #fff;
+	text-align: center;
+	margin: auto;
+	width: 80%;
+	padding: 1.5em;
+}
+
+@media screen and (min-width:1124px) {
+.entry-combo {
+	top: -7em;
+	width: 50%;
+	padding: 2.5em;
+}
+}
+
+.entry-title{
 	text-align: center;
 	line-height: 1em;
 	width: 100%;
 	margin: auto;
-	background: rgb(229, 41, 32);
-	color: #fff;
+	}
+
+@media screen and (max-width:768px) {
+.entry-title {
+	font-size: .8em;
+}
 }
 
+/* 	background: rgb(229, 41, 32); */
+
 .entry-meta {
-	margin: 0.5em 0 0 0;
+	padding-top: 1em;
 	font-size: 0.8em;
 	text-transform: uppercase;
 	letter-spacing: .2em;
+	color: #fff;
+	font-weight: 700;
+	line-height: 1em;
+}
+
+.entry-meta a {
+	color: #fff;
+	font-weight: 700;
 }
 
 .entry-title a {
 	text-decoration: none;
 	color: #fff;
-	font-weight: 900;
+	font-weight: 700;
 }
 
 h1.entry-title, h2.entry-title,  h2.entry-title a {
 	padding-top: 0 ;
 	padding-bottom: 0;
 	font-size: 2em;
-	font-weight: 400;
+	font-weight: 700;
 	text-decoration: none;
 }
 
@@ -1379,7 +1394,15 @@ h2.entry-title a {
 }
 
 .entry-content {
+	position: relative;
+	top: -3em;
 	color: #000;
+}
+
+@media screen and (min-width:1124px) {
+.entry-content {
+	top: -5em;
+}
 }
 
 .posted-on::before {
@@ -1387,8 +1410,9 @@ h2.entry-title a {
 }
 
 .cat-links {
-	padding-top: 0.5em;
+	padding-top: 0.2em;
 	display: block;
+	line-height: 1.4em;
 }
 
 .entry-footer {
@@ -1422,25 +1446,29 @@ h2.entry-title a {
 	color: #e52920;
 }
 
-@media screen and (min-width:1124px) {
-	.entry-content .single-content {
-	-webkit-column-count: 3; /* Chrome, Safari, Opera */
-    -moz-column-count: 3; /* Firefox */
-    column-count: 3;
-    -webkit-column-gap: 2em; /* Chrome, Safari, Opera */
-    -moz-column-gap: 2em; /* Firefox */
-    column-gap: 2em;
+.entry-content .single-content
+{
 	color: #000;
 	margin: auto;
-	max-width: 70%;
-}
+	max-width: 95%;
 }
 
 @media screen and (min-width:768px) {
-	.article-each .entry-content {
-		max-width: 70%;
-		margin: 3em auto 4em auto;
-	}
+	.entry-content .single-content {
+	max-width: 75%;
+}
+}
+
+@media screen and (min-width:1124px) {
+	.entry-content .single-content {
+	max-width: 60%;
+}
+}
+
+@media screen and (min-width:1250px) {
+	.entry-content .single-content {
+	width: 45%;
+}
 }
 
 .entry-footer {
@@ -1457,6 +1485,43 @@ blockquote {
 	padding-left: .8em;
 	margin-left: 0;
 }
+
+/*--------------------------------------------------------------
+## Social Share
+--------------------------------------------------------------*/
+
+#socialshare {
+	display: block;
+	padding: 5px;
+	text-align: center;
+	margin-top: 3em;
+	margin-left: auto;
+	margin-right: auto;
+	height: 40px;
+	border: solid #e52920 4px;
+}
+
+#socialshare ul {
+	text-align: center;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.shareicon {
+	width: 40px;
+	height: 40px;
+	margin: 10px;
+	float: left;
+	opacity: 1;
+}
+
+.shareicon:hover {
+	opacity: 1;
+	transform: scale(1.1);
+}
+
+/* End of CSS for Floating Share Buttons */
 
 /*--------------------------------------------------------------
 ## Comments
@@ -1618,25 +1683,19 @@ object {
 /*--------------------------------------------------------------
 ## Images
 --------------------------------------------------------------*/
-
-figure {
-	max-height: 768px;
+figure.featured-image {
+	max-height: 700px;
 	overflow: hidden;
 	margin: 0;
-}
-
-@media screen and (max-width:1366px) {
-	figure {
-		max-height: 600px;
-		overflow: hidden;
-		margin: 0;
-	}
+	border: #e52920 solid 0.4em;
 }
 
 .featured-image img {
+	vertical-align: middle;
 	width: 100%;
 	margin: auto;
 	padding-bottom: 0;
+	vertical-align: middle;
 }
 
 /*--------------------------------------------------------------

@@ -32,13 +32,17 @@
 			if ( $first_post == true ) {
 				the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
 			} else {
-				?> <div class="entry-title">
+				?>
+				<div class="entry-combo">
+				<div class="entry-title">
 				<?php
 				the_title( '<h1 class="entry-title">', '</h1>' );
-				?> <div class="entry-meta">
+				?> </div>
+				<div class="entry-meta">
 				<?php
 				outfocusred_posted_on();
 				?> </div>
+				</div>
 				<?php
 			}
 		
@@ -56,8 +60,8 @@
 
 	<div class="entry-content">
 	<div class="single-content">
-		<?php the_content(); ?>
-		<?php
+		<?php the_content();
+		socialshare();
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'outfocusred' ),
 				'after'  => '</div>',
