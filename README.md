@@ -28,6 +28,7 @@ Hence, v2.8.x is an update to the v2.x.x line, while v2.9.x is a precursor to th
 
 ##Changelog
 
+<<<<<<< HEAD
 ###2.9.3.20170125
 * Added social share buttons to posts
 * Based on feedback, removed the red border around the screen
@@ -37,6 +38,11 @@ Hence, v2.8.x is an update to the v2.x.x line, while v2.9.x is a precursor to th
 * Slightly increased font sizes to improve readability (base: 18px)
 * Adjusted content widths for more breakpoints to provide a more streamlined reading experience
 * Homepage has restricted content width to differ from individual articles page and to scroll faster
+=======
+###2.9.2.20161128
+* Temporarily commented out 3 column layout for posts
+* Reduced max featured image height to 600px in all devices
+>>>>>>> origin/master
 
 ###2.9.2.20161013
 * Removed masonry layout for index page
