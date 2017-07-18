@@ -1,4 +1,6 @@
-#OutFocus RED
+# OutFocusRED
+
+> Note: OutFocus has retired (https://www.outfocus.in/outfocus-is-retiring-today/) and subsequently OutFocusRED are no longer maintained.
 
 Hello, World.
 
@@ -12,7 +14,7 @@ OutFocus and CodeFeathers are subsidiaries of the Feathers - http://www.theFeath
 
 OutFocus is a free online magazine at http://www.OutFocus.in
 
-##Version numbering
+## Version numbering
 
 
 OutFocus RED uses the CodeFeathers numbering standard.
@@ -26,9 +28,9 @@ When the (minor version) number becomes 9, the update is in a major transition s
 
 Hence, v2.8.x is an update to the v2.x.x line, while v2.9.x is a precursor to the v3.x.x line. This is to ensure that the first release candidate of a major version is always v.X.0.0
 
-##Changelog
+## Changelog
 
-###2.9.3.20170125
+### 2.9.3.20170125
 * Added social share buttons to posts
 * Based on feedback, removed the red border around the screen
 * Thin red border to highlight featured image
@@ -38,16 +40,16 @@ Hence, v2.8.x is an update to the v2.x.x line, while v2.9.x is a precursor to th
 * Adjusted content widths for more breakpoints to provide a more streamlined reading experience
 * Homepage has restricted content width to differ from individual articles page and to scroll faster
 
-###2.9.2.20161013
+### 2.9.2.20161013
 * Removed masonry layout for index page
 * Added support for infinite scroll
 
-###2.9.2.20161012
+### 2.9.2.20161012
 * Styling
 * Added logo support in customizer
 * Added search icon
 * Made newspaper layout (3 columns) for large screens
 * Made 3 column masonry layout for index page
 
-###2.9.1.20161009
+### 2.9.1.20161009
 * First build
