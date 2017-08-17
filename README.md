@@ -1,6 +1,6 @@
 # OutFocusRED
 
-> Note: OutFocus has retired (https://www.outfocus.in/outfocus-is-retiring-today/) and subsequently OutFocusRED is longer maintained. Some of the original features were hardcoded into the theme, so if you're using this theme elsewhere and need support, contact us at contact(AT)thefeathers.in. We'll be happy to help!
+> Note: OutFocus has retired (https://www.outfocus.in/outfocus-is-retiring-today/) and subsequently OutFocusRED is longer maintained. Some of the text (ex.: footer) and stuff were hardcoded into the theme, so if you're using this theme elsewhere and need support, contact us at contact(AT)thefeathers.in. We'll be happy to help!
 
 Hello, World.
 
